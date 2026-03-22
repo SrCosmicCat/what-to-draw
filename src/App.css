@@ -1,0 +1,161 @@
+.app {
+  min-height: 100vh;
+  background: linear-gradient(to bottom right, #667eea, #764ba2);
+  padding: 2rem;
+}
+
+.app-header {
+  text-align: center;
+  color: white;
+  margin-bottom: 3rem;
+}
+
+.app-header h1 {
+  font-size: 3rem;
+  margin: 0 0 0.5rem 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.app-header p {
+  font-size: 1.2rem;
+  margin: 0;
+  opacity: 0.9;
+}
+
+.app-main {
+  max-width: 1200px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+}
+
+.roulettes {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin: 2rem 0;
+  padding: 2rem 0;
+}
+
+.controls-container {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+.controls {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.btn-primary,
+.btn-continue,
+.btn-reroll,
+.btn-toggle-inputs {
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  font-size: 1.3rem;
+  padding: 1.2rem 2.5rem;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.btn-continue {
+  background: linear-gradient(135deg, #56ab2f 0%, #a8e063 100%);
+  color: white;
+}
+
+.btn-continue:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.btn-reroll {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  color: white;
+}
+
+.btn-reroll:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.btn-toggle-inputs {
+  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+  color: white;
+  width: 100%;
+  margin: 2rem 0 1rem 0;
+}
+
+.btn-toggle-inputs:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.inputs-section {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 2px solid #eee;
+}
+
+.inputs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+@media (max-width: 768px) {
+  .app {
+    padding: 1rem;
+  }
+
+  .app-header h1 {
+    font-size: 2rem;
+  }
+
+  .app-header p {
+    font-size: 1rem;
+  }
+
+  .app-main {
+    padding: 1.5rem;
+  }
+
+  .roulettes {
+    gap: 1rem;
+  }
+
+  .controls {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .btn-primary,
+  .btn-continue,
+  .btn-reroll {
+    width: 100%;
+  }
+
+  .inputs-grid {
+    grid-template-columns: 1fr;
+  }
+}

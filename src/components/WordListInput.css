@@ -1,0 +1,32 @@
+.word-list-input {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.word-list-input label {
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.word-list-input textarea {
+  padding: 0.75rem;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 0.95rem;
+  resize: vertical;
+  min-height: 120px;
+  transition: border-color 0.3s;
+}
+
+.word-list-input textarea:focus {
+  outline: none;
+  border-color: #646cff;
+}
+
+.word-list-input small {
+  color: #666;
+  font-size: 0.85rem;
+}
