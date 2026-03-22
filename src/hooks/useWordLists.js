@@ -18,7 +18,8 @@ const DEFAULT_SUBJECTS = [
   'Chase de paw patrol',
   'AMLO',
   'Claudia Sheinbaum',
-  'Creeper de minecraft'
+  'Creeper de minecraft',
+  'Felipe Calderón'
 ];
 
 const DEFAULT_ACTIONS = [
@@ -53,7 +54,8 @@ const DEFAULT_OBJECTS = [
   'Barack Obama',
   'un teletubbie',
   'Pato Donald',
-  'Creeper de minecraft'
+  'Creeper de minecraft',
+  'Felipe Calderón'
 ];
 
 export const useWordLists = () => {
